@@ -1,6 +1,7 @@
 from student import Student
 from car import Car
 from address import Address
+from salvagecollection import SalvageCollection
 
 students = [
     Student("Анна", 19, "Б01-201"),
@@ -20,6 +21,12 @@ addresses = [
     Address("Казань", "Баумана", "5", 7)
 ]
 
+SalvageCollections = [
+    SalvageCollection(2 , 4000, "Человек"),
+    SalvageCollection(5 , 2000, "Организация"),
+    SalvageCollection(4 , 0, "Человек")
+]
+
 print("=== Студенты ===")
 for s in students:
     s.show_info()
@@ -31,3 +38,7 @@ for c in cars:
 print("\n=== Адреса ===")
 for a in addresses:
     a.show_info()
+
+print("\n=== Утильсбор ===")
+for b in SalvageCollections:
+    b.show_info()
